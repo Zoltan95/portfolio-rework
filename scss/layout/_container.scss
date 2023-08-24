@@ -1,0 +1,26 @@
+// ==========================================================================
+// Container
+// ==========================================================================
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @extend %clearfix;
+}
+
+.section {
+    margin-left : -15px;
+    margin-right: -15px;
+}
+
+.inner {
+    padding: 20px 0;
+}
+
+.row {
+    @extend %clearfix;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
