@@ -30,8 +30,8 @@
     }
 ?>
 
-<div class="navbar-container container">
-    <div class="navbar">
+<div class="navbar-container">
+    <div class="navbar container">
         <div>
             <a href="/portfolio-rework/"><h1>Zoltan</h1></a>
         </div>
@@ -52,8 +52,8 @@
     </div>
     <div class="navbar-content">
         <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Facebook</a>
+            <a href="#"><span class="social icon-linkedin"></span></a>
+            <a href="https://www.facebook.com/zoltan.urban.330/"><span class="social icon-facebook"></span></a>
         </div>
         <div class="page-links">
             <a class="<?php echo $a;?>" href="<?php echo $l;?>inc/pages/projects.php">My Projects</a>

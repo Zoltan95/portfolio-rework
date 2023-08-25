@@ -2,6 +2,7 @@
 {
     height: 50px;
     position: fixed;
+    background-color: white;
     left: 0;
     right: 0;
     z-index: 99;
@@ -21,15 +22,19 @@
     div:nth-child(1)
     {   
         display: flex;
-        margin-left: 10px;
         justify-content: start;
         h1
         {
-            font-size: 1.7em;
+            font-size: 2em;
             margin: 0;
             padding-top: 10px;
             color: #5271FF;
         }
+    }
+
+    .hamburger
+    {
+        //padding: 0;
     }
 
     div:nth-child(2)
@@ -96,6 +101,7 @@
                 &::before
                 {
                     content: "->";
+                    top: 1px;
                     right: 0px;
                     padding-right: 2px;
                 }
@@ -108,23 +114,10 @@
                 {
                     content: "->";
                     right: 0px;
-                    padding-top: 3px;
+                    top: 1px;
                     padding-right: 2px;
                 }
             }
-        }
-    }
-
-    .social-links
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 17px;
-
-        a
-        {
-            margin: 15px 0px;
         }
     }
 
@@ -135,4 +128,65 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
+}
+
+.social-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 35px;
+
+    & a
+    {
+        position: relative;
+        margin: 15px 0px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    & a:first-of-type
+    {
+        color: #0077b5;
+        background-color: white;
+        span
+        {
+            position: relative;
+            bottom: 2px; 
+        }
+        &:hover
+        {
+            transition: .85s all;
+            transform: rotate(360deg);
+        }
+    }
+    & a:last-of-type
+    {
+        color: white;
+        background-color: #4267B2;
+        span
+        {
+            position: relative;
+            left: 0.5px;
+            bottom: 0px; 
+        }
+        &:hover
+        {
+            transition: 1s all;
+            text-shadow:
+                //0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff,
+                0 0 42px #4267B2,
+                0 0 82px #4267B2,
+                0 0 92px #4267B2,
+                0 0 102px #4267B2,
+                0 0 151px #4267B2;
+        }
+    }
+}
+
+.social
+{
+    display: block;
+    font-size: 25px;
 }

@@ -2,7 +2,7 @@
 include '../base/head.php';
     include '../modules/navbar.php';
 ?>
-    <main>
+    <main class="contactform-img">
         <div class="projects-container container">
             <h1>Projects</h1>
             <div class="projects-container__holder">
@@ -15,7 +15,7 @@ include '../base/head.php';
                     </div>
                     <div class="projects-card__text">
                         <h3>Netmatters Website Reflection</h3>
-                        <p>HTML, CSS (SASS), JS</p>
+                        <p>HTML, CSS (SASS), JavaScript</p>
                         <p>Develop the following website page and rebuild it using HTML and SASS.</p>
                         <p>The site should be a mirror of the Netmatters homepage.</p>
                         <a href="https://www.netmatters.co.uk/">https://www.netmatters.co.uk</a>
@@ -23,6 +23,45 @@ include '../base/head.php';
                         <br>
                         <div class="projects-card__text-date">
                             <p>05/06/2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div class="projects-card__img">
+                        <a class="projects-card__codesample-link" href="https://github.com/Zoltan95/portfolio" target=”_blank”>Code Sample</a>
+                        <a class="projects-card__img-link" href="#" target=”_blank”>
+                            <img src="../../img/projects/portfolio-page.png" alt="Picture of My Portfolio Website">
+                        </a>
+                    </div>
+                    <div class="projects-card__text">
+                        <h3>Portfolio First</h3>
+                        <p>HTML, CSS (SASS), JavaScript</p>
+                        <p>Create a "portfolio" website page using HTML and SASS.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="projects-card__text-date">
+                            <p>20/06/2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-card">
+                    <div class="projects-card__img">
+                        <a class="projects-card__codesample-link" href="https://github.com/Zoltan95/js-array" target=”_blank”>Code Sample</a>
+                        <a class="projects-card__img-link" href="https://js-array.zoltan-urban.netmatters-scs.co.uk/" target=”_blank”>
+                            <img src="../../img/projects/js-array-page.png" alt="JavaScript Array Project">
+                        </a>
+                    </div>
+                    <div class="projects-card__text">
+                        <h3>JavaScript Array Assessment</h3>
+                        <p>HTML, CSS (SASS), JavaScript</p>
+                        <p>A JavaScript project (using jQuery and/or other frameworks) which loads an image from https://picsum.photos/ and displays it on a web page.</p>
+                        <p>It has an interface that is to display all images assigned to each email address, the email address only displays once. On picture addition new picture can be generated using a button.</p>
+                        <br>
+                        <br>
+                        <div class="projects-card__text-date">
+                            <p>17/07/2023</p>
                         </div>
                     </div>
                 </div>

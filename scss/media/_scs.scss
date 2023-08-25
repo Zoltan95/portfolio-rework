@@ -28,11 +28,11 @@
             justify-content: space-around;
             height: 300px;
             margin-bottom: 20px;
+            align-items: center;
 
             img
             {
-                padding-top: 10px;
-                width: 45%;
+                max-height: 300px;
             }
 
             h2
@@ -44,6 +44,7 @@
         &__text
         {
             width: 45%;
+            text-align: start;
 
             p
             {
@@ -60,9 +61,12 @@
         max-width: 1200px;
         &__card
         {
-            height: 350px;
+            height: auto;
             justify-content: flex-start;
             border-bottom: 0;
+            box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+            padding-bottom: 0;
+            border-radius: 15px;
         }
 
         &__text
@@ -81,14 +85,15 @@
             {
                 margin-left: 0%;
                 margin-right: 15%;
-                height: 350px;
+                height: auto;
                 justify-content: flex-start;
+                padding-bottom: 0;
             }
 
             &__text
             {
-                margin-left: 15px;
-                text-align: start;
+                margin-right: 15px;
+                text-align: end;
             }
         }
     }

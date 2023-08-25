@@ -1,11 +1,14 @@
 main.contactform-img
 {
-    background-image: url("../img/contact.png");
-    background-position: center;
+    background-image: url(../img/contact.png);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    right: 0;
+    position: absolute;
     height: 100%;
+    left: 0;
+    overflow: auto;
 }
 
 .contact-form
@@ -91,6 +94,65 @@ main.contactform-img
             margin-bottom: 0;
         }
     }
+}
+
+.form-social
+{
+    margin-top: 40px;
+    & .social-links
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        & a
+        {
+            margin: 0 15px;
+        }
+    }
+}
+
+#err
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    margin: 10px;
+    height: 0px;
+    transition: 1s all;
+    overflow: hidden;
+    &-list
+    {
+        border-radius: 4px;
+    }
+    &.open
+    {
+        height: 90px;
+    }
+    &.openmini
+    {
+        height: 40px;
+    }
+}
+
+.msg--success
+{
+    padding: 8px;
+    color: #00BF63;
+    font-weight: 500;
+    transition: 1s all;
+}
+
+.msg--error
+{
+    padding: 8px;
+    color: #FF3131;
+    font-weight: 500;
+    transition: 1s all;
 }
 
 .required

@@ -2,4 +2,84 @@
 {
     padding-top: 55px;
     text-align: center;
+
+    @include e(links)
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+    }
+
+    @include e(example)
+    {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+        margin-top: 40px;
+    }
+
+    @include e(box1)
+    {
+        padding: 15px;
+    }
+
+    @include e(box2)
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        a
+        {
+            position: relative;
+            transition: .4s all;
+            bottom: 0;
+            color:#5271FF;
+            height: 100%;
+            padding: 8px;
+            margin-right: 15px;
+            border: 1px solid #5271FF;
+            border-radius: 6px;
+            //background-color: #5271FF;
+            &:hover 
+            {
+                bottom: 10px;
+                font-weight: 600;
+                padding: 6px;
+                //background-color: #5271FF;
+                //color: white;
+                border: 2px solid #5271FF;
+                transition: .4s all;
+            }
+        }
+    }
+
+    @include e(hangers)
+    {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom: 0;
+        padding: 0px 10px;
+        position: absolute;
+        top: -17px;
+        left: 15px;
+        transition: .4s all;
+        &:hover
+        {
+            top: -20px;
+            transition: .4s all;
+        }
+    }
 }

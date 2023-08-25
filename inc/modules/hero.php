@@ -7,7 +7,7 @@
             Junior Full Stack Developer
         </p>
         <p class="paragraph">
-            Highly motivated Junior Developer with experience in building and maintaining web applications.
+            Highly motivated with experience in building and maintaining web applications.
         </p>
         <div class="hero__buttons">
             <a href="">Hire Me</a>

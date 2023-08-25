@@ -7,13 +7,19 @@
     padding-top: 55px;
     @include e(holder)
     {
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .projects-card
 {
+    margin-top: 50px;
+    max-width: 550px;
     position: relative;
+    background-color: white;
     @include e(link)
     {
         
@@ -30,7 +36,6 @@
     @include e(img-link)
     {
         height: 100%;
-        border: 1px solid #5271FF;
         z-index: 5;
         img
         {
@@ -40,7 +45,9 @@
 
     @include e(text)
     {
-        border: 1px solid #5271FF;
+        border: 1px solid #ccc;
+        box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+        background-color: white;
         border-top: 0;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -63,11 +70,15 @@
 
     @include e(text-date)
     {
-        border-top: 1px solid #5271FF;
-        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
         p
         {
-          margin: 0;   
+            width: 70%;
+            border-top: 1px solid #ccc;
+            margin: 0;   
+            padding: 10px;
         }
     }
 
@@ -79,13 +90,13 @@
         display:flex;
         text-align: end;
         background-color: white;
-        right: 0;
+        right: 10px;
         bottom: -20px;
-        border: 1px solid #5271FF;
+        border: 1px solid #ccc;
         border-bottom: 0;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        transition: 1s all;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        transition: .4s all;
         overflow: hidden;
         &:hover
         {

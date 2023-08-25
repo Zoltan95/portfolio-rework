@@ -3,7 +3,7 @@ include '../base/head.php';
     include '../modules/navbar.php';
 ?>
 
-    <main>
+    <main class="contactform-img">
         <div class="scs-container container">
             <h1>Scion Coalition Scheme</h1>
             <div class="scs-container__card">
