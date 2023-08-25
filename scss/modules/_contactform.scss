@@ -1,0 +1,99 @@
+main.contactform-img
+{
+    background-image: url("../img/contact.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.contact-form
+{
+    @include e(container)
+    {
+        color: #5271FF;
+        padding-top: 55px;
+        max-width: 500px;
+    }
+
+    @include e(text)
+    {
+        text-align: center;
+        h2
+        {
+            margin-bottom: 7px;
+        }
+        h3:first-of-type
+        {
+            margin-bottom: 0;
+        }
+        h3:last-of-type
+        {
+            margin-top: 0;
+        }
+        p
+        {
+            color: black;
+            margin: 2px 0px;
+        }
+    }
+
+    @include e(enquiry)
+    {
+        display: flex;
+        flex-direction: column;
+
+        input,textarea
+        {
+            display: block;
+			width: 100%;
+			height: 35px;
+			padding: 5px 15px;
+			margin: 0;
+			margin-bottom: 5px;
+			font-family: inherit;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: $black;
+			background-color: $white;
+			background-image: none;
+			border: 1px solid $grey;
+			border-radius: 2px;
+			box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+			transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+			&:focus 
+			{
+				border-color: $btncolor;
+				outline: 0;
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 15px rgba(91,192,222,.6);
+			}
+        }
+        textarea
+        {
+            height: 100%;
+        }
+        label
+        {
+            font-weight: 600;
+            display: block;
+        }
+        button
+        {
+            background-color: #5271FF;
+            color: white;
+            width: 50%;
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            border: 2px solid white;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.required
+{
+    color: red;
+}

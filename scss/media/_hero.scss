@@ -1,0 +1,41 @@
+@media (max-width: 447px) 
+{
+
+}
+@media (min-width: 768px) 
+{
+    .hero
+    {
+        @include e(img)
+        {
+            background-image: url("../img/welcome-sm2.png");
+        }
+    }
+}
+@media (max-width: 992px) 
+{
+	
+}
+@media (min-width: 993px)
+{
+
+}
+
+@media (min-width: 1199px) 
+{
+    .hero
+    {
+        @include e(img)
+        {
+            background-image: url("../img/welcome3.png");
+        }
+
+        @include e(text)
+        {
+            text-align: end;
+            width: 600px;
+            top: 40%;
+            left: 65%;
+        }
+    }
+}

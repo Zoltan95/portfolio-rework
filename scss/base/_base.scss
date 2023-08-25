@@ -7,7 +7,9 @@
 	box-sizing: border-box;
 }
 
-body {
+body, html {
+	color :#5271FF;
+	height: 100%;
 	font-family: $font-family--primary;
 	line-height: $base__line;
 }

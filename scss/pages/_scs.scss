@@ -1,0 +1,38 @@
+.scs-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: 50px;
+
+    h1
+    {
+        line-height: 40px;
+    }
+
+    @include e(card)
+    {
+        border-bottom: 1px solid #5271FF;
+        padding-bottom: 25px;
+        margin-bottom: 45px;
+        img
+        {
+            object-fit: cover;
+            width: 100%;
+            max-width: 500px;
+            max-height: 500px;
+            border-radius: 15px;
+        }
+        &:last-of-type
+        {
+            border-bottom: 0;
+        }
+    }
+    @include e(text)
+    {
+        
+    }
+
+}
