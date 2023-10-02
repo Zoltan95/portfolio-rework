@@ -43,7 +43,6 @@
         {
             position: relative;
             transition: .4s all;
-            bottom: 0;
             color:#5271FF;
             height: 100%;
             padding: 8px;
@@ -53,7 +52,6 @@
             //background-color: #5271FF;
             &:hover 
             {
-                bottom: 10px;
                 font-weight: 600;
                 padding: 6px;
                 //background-color: #5271FF;
